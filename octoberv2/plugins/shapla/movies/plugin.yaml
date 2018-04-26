@@ -1,0 +1,11 @@
+plugin:
+    name: 'shapla.movies::lang.plugin.name'
+    description: 'shapla.movies::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: shapla/movies/movies
+        icon: icon-video-camera

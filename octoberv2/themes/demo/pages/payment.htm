@@ -1,0 +1,20 @@
+title = "Payment"
+url = "/payment"
+layout = "default"
+is_hidden = 0
+
+[paymentform]
+==
+<div class="jumbotron">
+    <div class="container">
+        {% content "payment.htm" %}
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-header">
+        <h2>Payment</h2>
+    </div>
+    {% component 'paymentform' %}
+</div>
+<br><br><br><br><br><br>

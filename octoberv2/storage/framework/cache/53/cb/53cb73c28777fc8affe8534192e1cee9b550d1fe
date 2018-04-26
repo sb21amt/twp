@@ -1,0 +1,30 @@
+1524754574a:1:{s:14:"legacies-2.htm";a:11:{s:8:"fileName";s:14:"legacies-2.htm";s:7:"content";s:325:"title = "Legacies 2"
+url = "/legacies-2"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[legacies2]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Legacies Form - Part 1</h2>
+    </div>
+  {% component 'legacies2' %}
+</div>";s:5:"mtime";i:1524603224;s:6:"markup";s:187:"{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Legacies Form - Part 1</h2>
+    </div>
+  {% component 'legacies2' %}
+</div>";s:4:"code";N;s:5:"title";s:10:"Legacies 2";s:3:"url";s:11:"/legacies-2";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}s:9:"legacies2";a:0:{}}}

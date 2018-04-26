@@ -1,0 +1,21 @@
+title = "Add Beneficiary"
+url = "/beneficiary"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[beneficiaryform]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Residual Estate Form - Part 2</h2>
+    </div>
+     {% component 'beneficiaryform' %}
+</div>

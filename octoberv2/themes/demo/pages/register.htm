@@ -1,0 +1,25 @@
+title = "Register"
+url = "/register"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "defnitions"
+paramCode = "code"
+forceSecure = 0
+==
+<div class="jumbotron">
+    <div class="container">
+        {% content "register.htm" %}
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Register Form</h2>
+    </div>
+   {% component 'account' %}
+   
+</div>
+<br><br><br><br><br><br>

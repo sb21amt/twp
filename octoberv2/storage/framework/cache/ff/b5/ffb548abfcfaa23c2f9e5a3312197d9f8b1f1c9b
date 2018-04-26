@@ -1,0 +1,26 @@
+1524754574a:1:{s:11:"payment.htm";a:11:{s:8:"fileName";s:11:"payment.htm";s:7:"content";s:260:"title = "Payment"
+url = "/payment"
+layout = "default"
+is_hidden = 0
+
+[paymentform]
+
+[session]
+security = "user"
+redirect = "login"
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    {% component 'paymentform' %}
+</div>
+<br><br><br><br><br><br>";s:5:"mtime";i:1524597861;s:6:"markup";s:126:"{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    {% component 'paymentform' %}
+</div>
+<br><br><br><br><br><br>";s:4:"code";N;s:5:"title";s:7:"Payment";s:3:"url";s:8:"/payment";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"paymentform";a:0:{}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}}}
