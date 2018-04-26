@@ -1,0 +1,30 @@
+1524754574a:1:{s:15:"beneficiary.htm";a:11:{s:8:"fileName";s:15:"beneficiary.htm";s:7:"content";s:353:"title = "Add Beneficiary"
+url = "/beneficiary"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[beneficiaryform]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Residual Estate Form - Part 2</h2>
+    </div>
+     {% component 'beneficiaryform' %}
+</div>";s:5:"mtime";i:1524605450;s:6:"markup";s:203:"{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Residual Estate Form - Part 2</h2>
+    </div>
+     {% component 'beneficiaryform' %}
+</div>";s:4:"code";N;s:5:"title";s:15:"Add Beneficiary";s:3:"url";s:12:"/beneficiary";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}s:15:"beneficiaryform";a:0:{}}}

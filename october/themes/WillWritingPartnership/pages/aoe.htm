@@ -1,0 +1,22 @@
+title = "Aoe"
+url = "/aoe"
+layout = "default"
+is_hidden = 0
+
+[aoeform]
+
+[session]
+security = "user"
+redirect = "login"
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Appointment of Executor Form - Part 1</h2>
+    </div>
+   {% component 'aoeform' %}
+</div>
+<br><br><br><br><br><br>

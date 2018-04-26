@@ -1,0 +1,49 @@
+<body background="{{ 'assets/images/form-background.png'|theme }}">
+
+	<!-- Part 1 of Residual Estate -->
+	<br>
+	<form data-request="onSend">
+
+		<div class="form-group row">
+        	<label class="col-3 col-form-label">Any notes on special requirments that call for a trust?</label>
+	        <div class="col-9">
+	          <select class="form-control" name="notes" style="width: 300px">
+	          <option></option>
+	          <option value="Yes">Yes</option>
+	          <option value="No">No</option>
+	          </select>
+	        </div>
+      	</div>
+
+      	<div class="form-group row">
+        	<label class="col-3 col-form-label">To pass to spouse on 1st death?</label>
+	        <div class="col-9">
+	          <select class="form-control" name="pass_to_spouse" style="width: 300px">
+	          <option></option>
+	          <option value="Yes">Yes</option>
+	          <option value="No">No</option>
+	          </select>
+	        </div>
+      	</div>
+
+      	<div class="form-group row">
+        	<label class="col-3 col-form-label">Residue to be distubuted in equal propotions?</label>
+	        <div class="col-9">
+	          <select class="form-control" name="residue_distribute" style="width: 300px">
+	          <option></option>
+	          <option value="Yes">Yes</option>
+	          <option value="No">No</option>
+	          </select>
+	        </div>
+      	</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">NON PROVISION CLAUSE: Has anyone been specifically excluded from the will? if so who?</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="who" placeholder="Enter yes or no with details" style="width: 300px">
+			</div>
+		</div><br>
+
+		<button type="submit" class="btn btn-lg btn-outline-danger">Next</button>
+
+	</form>

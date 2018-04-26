@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.legacies2::lang.plugin.name'
+    description: 'shapla.legacies2::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

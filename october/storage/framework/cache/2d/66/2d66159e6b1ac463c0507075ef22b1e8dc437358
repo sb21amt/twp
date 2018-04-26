@@ -1,0 +1,32 @@
+1524754574a:1:{s:19:"residual-estate.htm";a:11:{s:8:"fileName";s:19:"residual-estate.htm";s:7:"content";s:391:"title = "Residual Estate"
+url = "/residual-estate"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[residual_estate_form]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Resdidual Estate Form - Part 1</h2>
+    </div>
+  {% component 'residual_estate_form' %}
+</div>
+<br><br><br><br><br><br>";s:5:"mtime";i:1524751313;s:6:"markup";s:232:"{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Resdidual Estate Form - Part 1</h2>
+    </div>
+  {% component 'residual_estate_form' %}
+</div>
+<br><br><br><br><br><br>";s:4:"code";N;s:5:"title";s:15:"Residual Estate";s:3:"url";s:16:"/residual-estate";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}s:20:"residual_estate_form";a:0:{}}}
