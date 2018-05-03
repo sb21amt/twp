@@ -1,0 +1,45 @@
+==
+<!-- Nav -->
+<nav id="layout-nav" class="navbar navbar-inverse navbar-fixed-top navbar-autohide" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ 'home'|page }}">TWP</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li class="separator hidden-xs"></li>
+                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+                <li class="{% if this.page.id == 'about' %}active{% endif %}"><a href="{{ 'about'|page }}">About</a></li>
+                <li class="{% if this.page.id == 'contact' %}active{% endif %}"><a href="{{ 'contact'|page }}">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- Change the name from Login to My profile once logged in.-->
+                <li class="{% if this.page.id == 'login' %}active{% endif %}"><a href="{{ 'login'|page }}">
+                {% if not user %} 
+
+                Login 
+
+                {% else %}
+
+                {{ user.name }}
+
+                {% endif %}
+
+                </a></li>
+
+                <!-- Show the sign out option if the user is logged in.-->
+                {% if user %}
+                <li><a data-request="onLogout" data-request-data="redirect: '/'">Sign out</a></li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+</nav>

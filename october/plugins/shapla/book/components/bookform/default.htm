@@ -1,0 +1,30 @@
+<form data-request="onSend">
+	<ul>
+		{% for error in errors.all() %}
+			<li>{{ error }}</li>
+		{% endfor %}
+	</ul>
+	<div class="form-group">
+		<label>Book ID</label>
+		<input name="bookid" type="text" class="form-control" placeholder="Enter book id">
+	</div><br>
+
+	<div class="form-group">
+		<label>Book Name</label>
+		<input name="book_name" type="text" class="form-control" placeholder="Enter book name">
+	</div><br>
+
+	<div class="form-group">
+		<label>Book Price</label>
+		<input name="price" type="text" class="form-control" placeholder="Enter price">
+	</div><br>
+
+	<div class="form-group">
+		<label>Date Published</label>
+		<input name="dop" type="text" class="form-control" placeholder="Enter date">
+	</div><br>
+
+
+
+<button type="submit" class="btn btn-primary">Send</button>
+</form>

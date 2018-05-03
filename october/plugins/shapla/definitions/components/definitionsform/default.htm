@@ -1,0 +1,25 @@
+<form data-request="onSend">
+	<ul>
+		{% for error in errors.all() %}
+			<li>{{ error }}</li>
+		{% endfor %}
+	</ul>
+
+	<p>Firstly, you should understand a few things.</p>
+	<p>A Will is a legal document. It is potentially a very powerful legal document and whilst we are going to ensure that the Will produced by this procedure is legally valid, we want to remind you that there is no substitute for professional, personal legal advice. If at any point in this procedure you feel like you need to speak to someone, just pick up the phone and we will help.</p>
+	<p></p>
+	<p>Before we continue, I just want to make sure you understand what this Basic Last Will and Testament will and will not do.</p> 
+    <p>This is a Basic Will. It will contain your executors (definition) and it will distribute your entire estate equally to your chosen beneficiaries (definition). Finally, it will give you a couple of simple choices about your funeral directions.</p>
+    <p>It will not:
+		Distribute any specific gifts
+		Make provision for your pets
+		Distribute the estate unequally</p>
+	<p>Also, you will need the facility to print the Will once it is complete.</p>
+	<br>
+
+	<div class="form-group">
+		<label>If you are happy with all that, then let’s proceed.</label><br><br>
+		<button type="submit" class="btn btn-danger">Next</button>
+	</div><br>
+
+</form>

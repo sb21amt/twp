@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.definitions::lang.plugin.name'
+    description: 'shapla.definitions::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

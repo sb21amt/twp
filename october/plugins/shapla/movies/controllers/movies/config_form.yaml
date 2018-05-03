@@ -1,0 +1,10 @@
+name: Movies
+form: $/shapla/movies/models/movie/fields.yaml
+modelClass: Shapla\Movies\Models\Movie
+defaultRedirect: shapla/movies/movies
+create:
+    redirect: 'shapla/movies/movies/update/:id'
+    redirectClose: shapla/movies/movies
+update:
+    redirect: shapla/movies/movies
+    redirectClose: shapla/movies/movies

@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.funeralarrangments::lang.plugin.name'
+    description: 'shapla.funeralarrangments::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

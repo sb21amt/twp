@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.reservebeneficiary::lang.plugin.name'
+    description: 'shapla.reservebeneficiary::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

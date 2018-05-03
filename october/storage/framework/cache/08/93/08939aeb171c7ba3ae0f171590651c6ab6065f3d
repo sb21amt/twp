@@ -1,0 +1,163 @@
+1524754574a:1:{s:13:"thank-you.htm";a:11:{s:8:"fileName";s:13:"thank-you.htm";s:7:"content";s:2329:"title = "Thank You"
+url = "/thank-you"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[thankyou]
+==
+<?php
+function onStart()
+{
+	
+$username = Auth::getUser();
+$user = $username->name;
+
+
+//##############################################################
+// 					Appointment of Executor
+//##############################################################
+
+// Appointment of Executor - Part 1
+$aoe = Db::table('appointment_of_executor')->where('user', '=', $user)->first();
+$this['aoe'] = $aoe;
+
+
+// Executor - Part 2
+
+$executor = Db::table('executor')->where('user', '=', $user)->first();
+$this['executor'] = $executor;
+
+
+// Professional Executor - Part 3
+
+$professional_executor = Db::table('professional_executor')->where('user', '=', $user)->first();
+$this['professional_executor'] = $professional_executor;
+
+
+//##############################################################
+// 							Legacies
+//##############################################################
+
+// Legacies - Part 1
+$legacies1 = Db::table('legacies1')->where('user', '=', $user)->first();
+$this['legacies1'] = $legacies1;
+
+// Legacies - Part 2
+$legacies2 = Db::table('legacies2')->where('user', '=', $user)->first();
+$this['legacies2'] = $legacies2;
+
+
+//##############################################################
+// 						Residual Estate
+//##############################################################
+
+// Residual Estate - Part 1
+$estate1 = Db::table('residual_estate')->where('user', '=', $user)->first();
+$this['estate1'] = $estate1;
+
+// Beneficiary - Part 2
+$estate2 = Db::table('beneficiary')->where('user', '=', $user)->first();
+$this['estate2'] = $estate2;
+
+// Reserved - Part 3
+$estate3 = Db::table('reserve_beneficiary')->where('user', '=', $user)->first();
+$this['estate3'] = $estate3;
+
+//##############################################################
+// 						Funeral Arrangements
+//##############################################################
+
+// Funeral Arrangement - Part 1
+$funeral = Db::table('funeral_arrangement')->where('user', '=', $user)->first();
+$this['funeral'] = $funeral;
+    
+}
+?>
+==
+{% component 'session' %}
+<br><br>
+<div class="container">
+
+   {% component 'thankyou' %} <br>
+
+</div>
+
+<br><br><br><br><br><br>";s:5:"mtime";i:1524752601;s:6:"markup";s:136:"{% component 'session' %}
+<br><br>
+<div class="container">
+
+   {% component 'thankyou' %} <br>
+
+</div>
+
+<br><br><br><br><br><br>";s:4:"code";s:2033:"
+function onStart()
+{
+	
+$username = Auth::getUser();
+$user = $username->name;
+
+
+//##############################################################
+// 					Appointment of Executor
+//##############################################################
+
+// Appointment of Executor - Part 1
+$aoe = Db::table('appointment_of_executor')->where('user', '=', $user)->first();
+$this['aoe'] = $aoe;
+
+
+// Executor - Part 2
+
+$executor = Db::table('executor')->where('user', '=', $user)->first();
+$this['executor'] = $executor;
+
+
+// Professional Executor - Part 3
+
+$professional_executor = Db::table('professional_executor')->where('user', '=', $user)->first();
+$this['professional_executor'] = $professional_executor;
+
+
+//##############################################################
+// 							Legacies
+//##############################################################
+
+// Legacies - Part 1
+$legacies1 = Db::table('legacies1')->where('user', '=', $user)->first();
+$this['legacies1'] = $legacies1;
+
+// Legacies - Part 2
+$legacies2 = Db::table('legacies2')->where('user', '=', $user)->first();
+$this['legacies2'] = $legacies2;
+
+
+//##############################################################
+// 						Residual Estate
+//##############################################################
+
+// Residual Estate - Part 1
+$estate1 = Db::table('residual_estate')->where('user', '=', $user)->first();
+$this['estate1'] = $estate1;
+
+// Beneficiary - Part 2
+$estate2 = Db::table('beneficiary')->where('user', '=', $user)->first();
+$this['estate2'] = $estate2;
+
+// Reserved - Part 3
+$estate3 = Db::table('reserve_beneficiary')->where('user', '=', $user)->first();
+$this['estate3'] = $estate3;
+
+//##############################################################
+// 						Funeral Arrangements
+//##############################################################
+
+// Funeral Arrangement - Part 1
+$funeral = Db::table('funeral_arrangement')->where('user', '=', $user)->first();
+$this['funeral'] = $funeral;
+    
+}";s:5:"title";s:9:"Thank You";s:3:"url";s:10:"/thank-you";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}s:8:"thankyou";a:0:{}}}

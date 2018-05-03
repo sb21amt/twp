@@ -1,0 +1,19 @@
+title = "Funeral Arrangement"
+url = "/funeralarrangement"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[funeralarrangmentsform]
+==
+{% component 'session' %}<br>
+<div class="container">
+
+    <div class="page-header">
+        <h2>Funeral Arrangments Form - Part 4</h2>
+    </div><br>
+  {% component 'funeralarrangmentsform' %}
+</div>

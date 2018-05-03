@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.aoe2::lang.plugin.name'
+    description: 'shapla.aoe2::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

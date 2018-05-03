@@ -1,0 +1,28 @@
+<body background="{{ 'assets/images/form-background.png'|theme }}">
+	<div class="center font-size">
+		<div class="page-header"><h2>Payment</h2></div><br>
+		<form data-request="onSend">
+
+			<div class="form-group">
+				<label>Card Name</label>
+				<input name="name" type="text" class="form-control" placeholder="Enter card name">
+			</div><br>
+
+			<div class="form-group">
+				<label>Card Number</label>
+				<input name="number" type="text" class="form-control" placeholder="Enter card number">
+			</div><br>
+
+			<div class="form-group">
+				<label>CVV</label>
+				<input name="cvv" type="text" class="form-control" placeholder="Enter cvv">
+			</div><br>
+
+			<div class="form-group">
+				<label>Expiry Date</label>
+				<input name="expiry" type="date" class="form-control" placeholder="Enter expiry date">
+			</div><br>
+
+			<button type="submit" class="btn btn-lg btn-outline-danger">Pay</button>
+		</form>
+	</div>

@@ -1,0 +1,22 @@
+title = "Reserve Beneficiary"
+url = "/reservebeneficiary"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[reservebeneficiaryform]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Residual Estate Form - Part 3</h2>
+    </div>
+  {% component 'reservebeneficiaryform' %}
+</div>
+<br><br><br><br><br><br>
