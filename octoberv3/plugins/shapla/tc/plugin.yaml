@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.tc::lang.plugin.name'
+    description: 'shapla.tc::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

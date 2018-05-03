@@ -1,0 +1,43 @@
+<body background="{{ 'assets/images/form-background.png'|theme }}">
+	<h3>Terms and Conditions</h3><br>
+
+	<!-- Part 1 of AOE -->
+	<!-- Below is the form inputs that will be listed for the customer to select, the information will be posted to the PHP file. To post this it uses a data-request and the name o fthe function.-->
+	<form data-request="onSend">
+
+		<br>
+		<div class="form-group">
+		<label class="font-size">Spouse to be executor</label>
+			<select class="form-control" name="spouse_to_be_executor" style="width: 80px">
+				<option></option>
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+		<label class="font-size">Sole or joint</label>
+			<select class="form-control" name="sole_or_joint" style="width: 80px">
+				<option></option>
+				<option value="Sole">Sole</option>
+				<option value="Joint">Joint</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+		<label class="font-size">Mirror executor</label>
+			<select class="form-control" name="mirror_executor" style="width: 80px">
+				<option></option>
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</select>
+		</div>
+
+
+		<div>
+			<br>
+	  		<button type="submit" class="btn btn-lg btn-outline-danger">Next</button>
+		</div>
+
+	</form>
+

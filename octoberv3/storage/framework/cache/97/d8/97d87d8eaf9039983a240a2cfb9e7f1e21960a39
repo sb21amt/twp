@@ -1,0 +1,38 @@
+1525374259a:1:{s:16:"bibliography.htm";a:9:{s:8:"fileName";s:16:"bibliography.htm";s:7:"content";s:1231:"title = "Bibliography"
+url = "/bibliography"
+layout = "default"
+is_hidden = 0
+==
+<br><br>
+<div class="container">
+
+	<h2>Project Bibliography</h2><br>
+
+		<ol type="1">
+		  <li>CMS, O. (2018). Building components - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/docs/plugin/components [Accessed 3 May 2018].</li>
+		  <li>CMS, O. (2018). Building components - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/docs/plugin/components [Accessed 3 May 2018].</li>
+		  <li>CMS, O. (2018). Themes - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/docs/cms/themes [Accessed 3 May 2018].</li>
+		  <li>CMS, O. (2018). User plugin - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/plugin/rainlab-user [Accessed 3 May 2018].</li>
+		  <li>W3schools.com. (2018). How To Create Tabs. [online] Available at: https://www.w3schools.com/howto/howto_js_tabs.asp [Accessed 3 May 2018].</li>
+		  <li>Watch and Learn (2016). Making websites with October CMS. [video] Available at: https://www.youtube.com/watch?v=3SmnExVW0Ag&list=PLUBR53Dw-Ef-X-_A1KLy41r2QArCBy4rM [Accessed 3 May 2018].</li>
+		  <li></li>
+		</ol> 
+
+</div>
+<br><br><br><br><br><br>";s:5:"mtime";i:1525373654;s:6:"markup";s:1150:"<br><br>
+<div class="container">
+
+	<h2>Project Bibliography</h2><br>
+
+		<ol type="1">
+		  <li>CMS, O. (2018). Building components - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/docs/plugin/components [Accessed 3 May 2018].</li>
+		  <li>CMS, O. (2018). Building components - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/docs/plugin/components [Accessed 3 May 2018].</li>
+		  <li>CMS, O. (2018). Themes - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/docs/cms/themes [Accessed 3 May 2018].</li>
+		  <li>CMS, O. (2018). User plugin - October CMS. [online] Octobercms.com. Available at: https://octobercms.com/plugin/rainlab-user [Accessed 3 May 2018].</li>
+		  <li>W3schools.com. (2018). How To Create Tabs. [online] Available at: https://www.w3schools.com/howto/howto_js_tabs.asp [Accessed 3 May 2018].</li>
+		  <li>Watch and Learn (2016). Making websites with October CMS. [video] Available at: https://www.youtube.com/watch?v=3SmnExVW0Ag&list=PLUBR53Dw-Ef-X-_A1KLy41r2QArCBy4rM [Accessed 3 May 2018].</li>
+		  <li></li>
+		</ol> 
+
+</div>
+<br><br><br><br><br><br>";s:4:"code";N;s:5:"title";s:12:"Bibliography";s:3:"url";s:13:"/bibliography";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

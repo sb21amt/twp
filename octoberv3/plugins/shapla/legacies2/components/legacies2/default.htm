@@ -1,0 +1,108 @@
+<body background="{{ 'assets/images/form-background.png'|theme }}">
+
+	<div class="row">
+    <div class="span6">
+	<br><p>If yes, please make full notes of who has been promised what property.</p><br>
+
+	<!-- Part 1 of Legacies -->
+	<form data-request="onSend">
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Description Of Gift:</label>
+			<div class="col-9">
+			<textarea class="form-control" name="description_of_gift" placeholder="Enter the description" style="width: 380px"></textarea>
+			</div>
+		</div>
+
+		<div class="form-group row">
+        	<label class="col-3 col-form-label">Owned By:</label>
+	        <div class="col-9">
+	          <select class="form-control" name="owned" style="width: 380px">
+	          <option></option>
+	          <option value="Testator 1: Own Death">Testator 1: Own Death</option>
+	          <option value="Testator 2: Own Death">Testator 2: Own Death</option>
+	          <option value="Jointly: 2nd Death">Jointly: 2nd Death</option>
+	          </select>
+	        </div>
+      	</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">To:</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="testator1" placeholder="Enter testator 1" style="width: 380px"><br>
+			<input class="form-control" type="text" name="testator2" placeholder="Enter testator 2" style="width: 380px">
+			</div>
+		</div>
+	</div>
+
+
+    <div class="span6"><br><br><br><br>
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Firstname</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="firstname" placeholder="Enter firstname" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Lastname</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="lastname" placeholder="Enter lastname" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Address Line 1</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="address1" placeholder="Enter address line 1" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Address Line 2</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="address2" placeholder="Enter address line 2" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">City</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="city" placeholder="Enter city" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row" >
+			<label class="col-3 col-form-label">Postcode</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="postcode" placeholder="Enter postcode" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Mobile Number</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="mobile" placeholder="Enter mobile number" style="width: 380px">
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-3 col-form-label">Home Number</label>
+			<div class="col-9">
+			<input class="form-control" type="text" name="home" placeholder="Enter home number" style="width: 380px">
+			</div>
+		</div><br>
+
+		<div class="form-group row">
+			<div class="col-3">
+			<button type="submit" class="btn btn-lg btn-outline-primary">Add</button>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	</form>
+
+	<!-- This a tag will direct the user to the residual-esate -->
+	<a href="{{ 'residual-estate'|page }} " class="btn btn-lg btn-outline-danger">Next</a>
+

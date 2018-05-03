@@ -1,0 +1,21 @@
+title = "Legacies 2"
+url = "/legacies-2"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[legacies2]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Legacies Form - Part 1</h2>
+    </div>
+  {% component 'legacies2' %}
+</div>

@@ -1,0 +1,177 @@
+<body background="{{ 'assets/images/form-background.png'|theme }}">
+<br><br>
+
+<!-- This displays the thank you message. -->
+<div class="alert alert-success"><br>
+      <button type="button" class="close" data-dismiss="alert"></button>
+      <img src="{{ 'assets/images/check.png'|theme }}" class="img" style="width:100px;height:100px; border-radius:50%;">
+      <br><br>
+      <h4 style="text-align: center;"><strong>Thank you for creating your will with The Willwriting Partnership!</strong></h4>
+      <br>
+      <p style="text-align: center;"><i>I am delighted to inform you that your will has been successfully created. If you will like to view the will then click the button below.</i></p>
+      <br>
+    </div><br>
+
+
+<!-- The will details will be displayed in a tabbed format, using javascript. -->
+<b><p>Click on the buttons inside the tabbed menu:</p></b><br>
+
+<div class="tab">
+  <button class="tablinks" onclick="formOpen(event, 'Appointment_Executor')" id="defaultOpen">Appointment Executor</button>
+  <button class="tablinks" onclick="formOpen(event, 'Legacies')">Legacies</button>
+  <button class="tablinks" onclick="formOpen(event, 'Residual_Estate')">Residual Estate</button>
+  <button class="tablinks" onclick="formOpen(event, 'Funeral_Arrangements')">Funeral Arrangements</button>
+</div>
+
+<div id="Appointment_Executor" class="tabcontent">
+	<span onclick="this.parentElement.style.display='none'" class="topright">&times</span><br>
+	<h3><u>Appointment of Executor</u></h3><br>
+	<p>Spouse to be executor:&nbsp; <b>{{ aoe.spouse_to_be_executor }}</b></p>
+	<p>Mirror Executor:&nbsp; <b>{{ aoe.spouse_to_be_executor }}</b></p>
+	<p>Sole or Joint:&nbsp; <b>{{ aoe.sole_or_joint }}</b></p><br>
+
+	<h3><u>Executor</u></h3><br>
+	<p>Relationship to Testator:&nbsp; <b>{{ executor.testator_1_relationship }}</b>, &nbsp;(Testator 2):&nbsp; <b>{{ executor.testator_2_relationship }}</b></p>
+	<p>Title:&nbsp; <b>{{ executor.title }}</b></p>
+	<p>Firstname:&nbsp; <b>{{ executor.firstname }}</b></p>
+	<p>Lastname:&nbsp; <b>{{ executor.lastname }}</b></p>
+	<p>Mobile Number:&nbsp; <b>{{ executor.mobile_number }}</b></p>
+	<p>Home Number:&nbsp; <b>{{ executor.home_number }}</b></p>
+	<p>Type:&nbsp; <b>{{ executor.type }}</b></p>
+	<p>Address Line 1:&nbsp; <b>{{ executor.address_line_1 }}</b></p>
+	<p>Address Line 2:&nbsp; <b>{{ executor.address_line_2 }}</b></p>
+	<p>City:&nbsp; <b>{{ executor.city }}</b></p>
+	<p>Post Code:&nbsp; <b>{{ executor.postcode }}</b></p><br>
+
+	<h3><u>Professional Executor</u></h3><br>
+	<p>TWP to Act:&nbsp; <b>{{ professional_executor.twp_to_act }}</b></p>
+	<p>Firm Name:&nbsp; <b>{{ professional_executor.firmname }}</b></p>
+	<p>Address Line 1:&nbsp; <b>{{ professional_executor.address_line_1 }}</b></p>
+	<p>Address Line 2:&nbsp; <b>{{ professional_executor.address_line_2 }}</b></p>
+	<p>Post Code:&nbsp; <b>{{ professional_executor.postcode }}</b></p>
+	<p>Phone Number:&nbsp; <b>{{ professional_executor.phone_number }}</b></p>
+	<p>Option:&nbsp; <b>{{ professional_executor.option }}</b></p>
+</div>
+
+<div id="Legacies" class="tabcontent">
+	<span onclick="this.parentElement.style.display='none'" class="topright">&times</span><br>
+	<p>Legacies according to memoradum?&nbsp; <b>{{ legacies1.memoradum }}</b></p>
+	<p>Have you made any promises of property to anybody, whether written or not?&nbsp; <b>{{ legacies1.promises }}</b></p><br>
+
+	<h3><u>Gifts</u></h3><br>
+	<p>Description Of Gift:&nbsp; <b>{{ legacies2.description_of_gift }}</b></p>
+	<p>Owned By:&nbsp; <b>{{ legacies2.owned }}</b></p>
+	<p>To (Testator 1):&nbsp; <b>{{ legacies2.testator_1_relationship }}</b>, &nbsp;(Testator 2):&nbsp; <b>{{ legacies2.testator_2_relationship }}</b></p>
+	<p>To (Testator 2):&nbsp; <b>{{ legacies2.testator_2_relationship }}</b></p>
+	<p>Firstname:&nbsp; <b>{{ legacies2.firstname }}</b></p>
+	<p>Lastname:&nbsp; <b>{{ legacies2.lastname }}</b></p>
+	<p>Address Line 1:&nbsp; <b>{{ legacies2.address_line_1 }}</b></p>
+	<p>Address Line 2:&nbsp; <b>{{ legacies2.address_line_2 }}</b></p>
+	<p>City:&nbsp; <b>{{ legacies2.city }}</b></p>
+	<p>Post Code:&nbsp; <b>{{ legacies2.postcode }}</b></p>
+	<p>Mobile Number:&nbsp; <b>{{ legacies2.mobile_number }}</b></p>
+	<p>Home Number:&nbsp; <b>{{ legacies2.home_number }}</b></p><br>
+</div>
+
+<div id="Residual_Estate" class="tabcontent">
+	<span onclick="this.parentElement.style.display='none'" class="topright">&times</span><br>
+	<p>Any notes on special requirments that call for a trust?&nbsp; <b>{{ estate1.notes }}</b></p>
+	<p>To pass to spouse on 1st death? &nbsp; <b>{{ estate1.pass_to_spouse }}</b></p>
+	<p>Residue to be distubuted in equal propotions?&nbsp; <b>{{ estate1.pass_to_spouse }}</b></p>
+	<p>NON PROVISION CLAUSE: Has anyone been specifically excluded from the will? if so who? &nbsp; <b>{{ estate1.who }}</b></p><br>
+
+	<h3><u>Beneficiary</u></h3><br>
+	<p>Relationship to Testator:&nbsp; <b>{{ estate2.testator_1_relationship }}</b>, &nbsp;(Testator 2):&nbsp; <b>{{ estate2.testator_2_relationship }}</b></p>
+	<p>Firstname:&nbsp; <b>{{ estate2.firstname }}</b></p>
+	<p>Lastname:&nbsp; <b>{{ estate2.lastname }}</b></p>
+	<p>Address Line 1:&nbsp; <b>{{ estate2.address_line_1 }}</b></p>
+	<p>Address Line 2:&nbsp; <b>{{ estate2.address_line_2 }}</b></p>
+	<p>City:&nbsp; <b>{{ estate2.city }}</b></p>
+	<p>Post Code:&nbsp; <b>{{ estate2.postcode }}</b></p>
+	<p>Mobile Number:&nbsp; <b>{{ estate2.mobile_number }}</b></p>
+	<p>Home Number:&nbsp; <b>{{ estate2.home_number }}</b></p>
+	<p>Share To Beneficiary:&nbsp; <b>{{ estate2.share_to_beneficiary }}</b>, &nbsp;(Age):&nbsp; <b>{{ estate2.share_age }}</b></p>
+	<p>Or To Issue:&nbsp; <b>{{ estate2.issue }}</b></p><br>
+
+
+	<h3><u>Reserved Beneficiary</u></h3><br>
+	<p>Relationship to Testator:&nbsp; <b>{{ estate3.testator_1_relationship }}</b>, &nbsp;(Testator 2):&nbsp; <b>{{ estate3.testator_2_relationship }}</b></p>
+	<p>Firstname:&nbsp; <b>{{ estate3.firstname }}</b></p>
+	<p>Lastname:&nbsp; <b>{{ estate3.lastname }}</b></p>
+	<p>Address Line 1:&nbsp; <b>{{ estate3.address_line_1 }}</b></p>
+	<p>Address Line 2:&nbsp; <b>{{ estate3.address_line_2 }}</b></p>
+	<p>City:&nbsp; <b>{{ estate3.city }}</b></p>
+	<p>Post Code:&nbsp; <b>{{ estate3.postcode }}</b></p>
+	<p>Mobile Number:&nbsp; <b>{{ estate3.mobile_number }}</b></p>
+	<p>Home Number:&nbsp; <b>{{ estate3.home_number }}</b></p>
+	<p>Share To Beneficiary:&nbsp; <b>{{ estate3.share_to_beneficiary }}</b>, &nbsp;(Age):&nbsp; <b>{{ estate3.share_age }}</b></p>
+	<p>Or To Issue:&nbsp; <b>{{ estate3.issue }}</b></p><br>
+	
+</div>
+
+<div id="Funeral_Arrangements" class="tabcontent">
+	<span onclick="this.parentElement.style.display='none'" class="topright">&times</span><br>
+		<h3><u>Testator 1</u></h3><br>
+		<p>Funeral prearranged with:&nbsp; <b>{{ funeral.arranged_with_1 }}</b></p>
+		<p>Funeral Plan Ref Number:&nbsp; <b>{{ funeral.reference_number_1 }}</b></p>
+		<p>How will the funeral be funded:&nbsp; <b>{{ funeral.funeral_fund_1 }}</b></p>
+		<p>Donation of body for research:&nbsp; <b>{{ funeral.donation_of_body_1 }}</b></p>
+		<p>Donation of organs for transplant:&nbsp; <b>{{ funeral.donation_of_organs_1 }}</b></p>
+		<p>Any organs not to be used (e.g. Eyes):&nbsp; <b>{{ funeral.organs_excluded_1 }}</b></p>
+		<p>Cremation required?&nbsp; <b>{{ funeral.cremation_required_1 }}</b></p>
+		<p>Burial required?&nbsp; <b>{{ funeral.burial_required_1 }}</b></p>
+		<p>Service to take place at:&nbsp; <b>{{ funeral.service_destination_1 }}</b></p>
+		<p>Burial/Cremation take place at?&nbsp; <b>{{ funeral.burial_destination_1 }}</b></p>
+		<p>Ashes to be buried or scattered?&nbsp; <b>{{ funeral.ashes_1 }}</b></p>
+		<p>Where will they be buried/scattered?&nbsp; <b>{{ funeral.ashes_destination_1 }}</b></p>
+		<p>Service Requirements (Particular songs/religious traditions/clothing requirements/tone of service etc.)&nbsp; <b>{{ funeral.service_requirements_1 }}</b></p>
+		<p>Family flowers only?&nbsp; <b>{{ funeral.family_flowers_1 }}</b></p>
+		<p>Donation to charity in lieu of flowers:&nbsp; <b>{{ funeral.donations_to_charity_1 }}</b></p>
+		<p>Notes:&nbsp; <b>{{ funeral.notes_1 }}</b></p><br> 
+
+		<h3><u>Testator 2</u></h3><br>
+		<p>Funeral prearranged with:&nbsp; <b>{{ funeral.arranged_with_2 }}</b></p>
+		<p>Funeral Plan Ref Number:&nbsp; <b>{{ funeral.reference_number_2 }}</b></p>
+		<p>How will the funeral be funded:&nbsp; <b>{{ funeral.funeral_fund_2 }}</b></p>
+		<p>Donation of body for research:&nbsp; <b>{{ funeral.donation_of_body_2 }}</b></p>
+		<p>Donation of organs for transplant:&nbsp; <b>{{ funeral.donation_of_organs_2 }}</b></p>
+		<p>Any organs not to be used (e.g. Eyes):&nbsp; <b>{{ funeral.organs_excluded_2 }}</b></p>
+		<p>Cremation required?&nbsp; <b>{{ funeral.cremation_required_2 }}</b></p>
+		<p>Burial required?&nbsp; <b>{{ funeral.burial_required_2 }}</b></p>
+		<p>Service to take place at:&nbsp; <b>{{ funeral.service_destination_2 }}</b></p>
+		<p>Burial/Cremation take place at?&nbsp; <b>{{ funeral.burial_destination_2 }}</b></p>
+		<p>Ashes to be buried or scattered?&nbsp; <b>{{ funeral.ashes_2 }}</b></p>
+		<p>Where will they be buried/scattered?&nbsp; <b>{{ funeral.ashes_destination_2 }}</b></p>
+		<p>Service Requirements (Particular songs/religious traditions/clothing requirements/tone of service etc.)&nbsp; <b>{{ funeral.service_requirements_2 }}</b></p>
+		<p>Family flowers only?&nbsp; <b>{{ funeral.family_flowers_2 }}</b></p>
+		<p>Donation to charity in lieu of flowers:&nbsp; <b>{{ funeral.donations_to_charity_2 }}</b></p>
+		<p>Notes:&nbsp; <b>{{ funeral.notes_2 }}</b></p><br> 
+</div>
+
+<script>
+// This function has been taken from W3Schools (W3Scools, 2018).
+// This function is used to display the tabbed contents when the user selects each one.
+function formOpen(evt, formName) {
+    var i, tabcontent, tablinks;
+    // For each tablink the tab content will be displayed.
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) 
+    {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    // When the tablink is selected that will display the active class.
+    for (i = 0; i < tablinks.length; i++) 
+    {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // This will show the active tabe.
+    document.getElementById(formName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+	// Get the element with id="defaultOpen" and click on it.
+	document.getElementById("defaultOpen").click();
+</script>
+

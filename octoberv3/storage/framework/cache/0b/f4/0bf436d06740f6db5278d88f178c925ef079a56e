@@ -1,0 +1,32 @@
+1525374213a:1:{s:22:"reservebeneficiary.htm";a:11:{s:8:"fileName";s:22:"reservebeneficiary.htm";s:7:"content";s:401:"title = "Reserve Beneficiary"
+url = "/reservebeneficiary"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "user"
+redirect = "login"
+
+[reservebeneficiaryform]
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Residual Estate Form - Part 3</h2>
+    </div>
+  {% component 'reservebeneficiaryform' %}
+</div>
+<br><br><br><br><br><br>";s:5:"mtime";i:1523906918;s:6:"markup";s:233:"{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    <div class="page-header">
+        <h2>Residual Estate Form - Part 3</h2>
+    </div>
+  {% component 'reservebeneficiaryform' %}
+</div>
+<br><br><br><br><br><br>";s:4:"code";N;s:5:"title";s:19:"Reserve Beneficiary";s:3:"url";s:19:"/reservebeneficiary";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:5:"login";}s:22:"reservebeneficiaryform";a:0:{}}}

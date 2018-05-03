@@ -1,0 +1,6 @@
+plugin:
+    name: 'shapla.residualestate::lang.plugin.name'
+    description: 'shapla.residualestate::lang.plugin.description'
+    author: Shapla
+    icon: oc-icon-adjust
+    homepage: ''

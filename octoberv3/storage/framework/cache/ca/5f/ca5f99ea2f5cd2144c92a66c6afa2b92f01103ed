@@ -1,0 +1,7 @@
+1525368383a:1:{s:12:"password.htm";a:8:{s:8:"fileName";s:12:"password.htm";s:7:"content";s:133:"title = "Forgotten your password?"
+url = "/forgot-password/:code?"
+
+[resetPass]
+paramCode = "code"
+==
+{% component 'resetPassword' %}";s:5:"mtime";i:1525367139;s:6:"markup";s:31:"{% component 'resetPassword' %}";s:4:"code";N;s:5:"title";s:24:"Forgotten your password?";s:3:"url";s:23:"/forgot-password/:code?";s:9:"resetPass";a:1:{s:9:"paramCode";s:4:"code";}}}

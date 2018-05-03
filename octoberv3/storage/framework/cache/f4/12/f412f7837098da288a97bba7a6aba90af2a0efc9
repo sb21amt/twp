@@ -1,0 +1,73 @@
+1525374213a:1:{s:10:"header.htm";a:5:{s:8:"fileName";s:10:"header.htm";s:7:"content";s:1632:"<div class="navigation">
+    <ul>
+        <div class="">
+            <a href="{{ 'index'|page }}"><img class="img-fluid menu-logo" src="{{ 'assets/images/twp-logo.png'|theme }}"></a>
+            <li><a class="company-name" ></a></li>
+        </div>
+
+        <li class="nav-item"><a class="nav-link" href="{{ 'index'|page }}">Homepage</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'wills'|page }}">Will Writing</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'trusts'|page }}">Trust Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'powerofattorney'|page }}">Power of Attorney</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'funeral'|page }}">Funeral Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'businesswills'|page }}">Business Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'probate'|page }}">Probate</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'contact'|page }}">Contact Us</a></li>
+        <!-- Change the name from Login to My profile once logged in.-->
+        <!-- (October CMS, 2018) -->
+        <li class="{% if this.page.id == 'login' %}active{% endif %}"><a href="{{ 'account'|page }}">
+        {% if not user %} 
+
+        Login 
+
+        {% else %}
+
+        {{ user.name }}
+
+        {% endif %}
+
+        </a></li>
+        <!-- Show the sign out option if the user is logged in.-->
+        {% if user %}
+        <li><a style="color: white;" data-request="onLogout" data-request-data="redirect: '/'">Sign out</a></li>
+        {% endif %}
+
+    </ul>
+</div>
+
+";s:5:"mtime";i:1525367457;s:6:"markup";s:1630:"<div class="navigation">
+    <ul>
+        <div class="">
+            <a href="{{ 'index'|page }}"><img class="img-fluid menu-logo" src="{{ 'assets/images/twp-logo.png'|theme }}"></a>
+            <li><a class="company-name" ></a></li>
+        </div>
+
+        <li class="nav-item"><a class="nav-link" href="{{ 'index'|page }}">Homepage</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'wills'|page }}">Will Writing</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'trusts'|page }}">Trust Formation</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'powerofattorney'|page }}">Power of Attorney</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'funeral'|page }}">Funeral Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'businesswills'|page }}">Business Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'probate'|page }}">Probate</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ 'contact'|page }}">Contact Us</a></li>
+        <!-- Change the name from Login to My profile once logged in.-->
+        <!-- (October CMS, 2018) -->
+        <li class="{% if this.page.id == 'login' %}active{% endif %}"><a href="{{ 'account'|page }}">
+        {% if not user %} 
+
+        Login 
+
+        {% else %}
+
+        {{ user.name }}
+
+        {% endif %}
+
+        </a></li>
+        <!-- Show the sign out option if the user is logged in.-->
+        {% if user %}
+        <li><a style="color: white;" data-request="onLogout" data-request-data="redirect: '/'">Sign out</a></li>
+        {% endif %}
+
+    </ul>
+</div>";s:4:"code";N;}}

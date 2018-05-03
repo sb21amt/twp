@@ -1,0 +1,19 @@
+title = "Payment"
+url = "/payment"
+layout = "default"
+is_hidden = 0
+
+[paymentform]
+
+[session]
+security = "user"
+redirect = "login"
+==
+{% component 'session' %}
+<br><br>
+
+<div class="container">
+
+    {% component 'paymentform' %}
+</div>
+<br><br><br><br><br><br>

@@ -1,0 +1,27 @@
+1525374213a:1:{s:19:"forgot-password.htm";a:10:{s:8:"fileName";s:19:"forgot-password.htm";s:7:"content";s:305:"title = "Reset Password"
+url = "/forgot-password/:code?"
+layout = "default"
+is_hidden = 0
+
+[resetPassword]
+paramCode = "code"
+==
+<br><br>
+<div class="container">
+
+{% component 'resetPassword' %}
+
+<hr />
+
+<p><a href="{{ 'account'|page }}">Go back to Sign in</a></p>
+</div>
+<br><br><br><br><br><br>";s:5:"mtime";i:1525371333;s:6:"markup";s:176:"<br><br>
+<div class="container">
+
+{% component 'resetPassword' %}
+
+<hr />
+
+<p><a href="{{ 'account'|page }}">Go back to Sign in</a></p>
+</div>
+<br><br><br><br><br><br>";s:4:"code";N;s:5:"title";s:14:"Reset Password";s:3:"url";s:23:"/forgot-password/:code?";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:13:"resetPassword";a:1:{s:9:"paramCode";s:4:"code";}}}

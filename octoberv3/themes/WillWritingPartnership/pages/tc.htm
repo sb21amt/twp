@@ -1,0 +1,18 @@
+title = "Tc"
+url = "/tc"
+layout = "default"
+is_hidden = 0
+
+[tcform]
+
+[session]
+security = "user"
+redirect = "account"
+==
+{% component 'session' %}
+
+<br><br>
+<div class="container">
+	{% component 'tcform' %}
+</div>
+<br><br><br><br><br><br>
